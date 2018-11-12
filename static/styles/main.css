@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans|IBM+Plex+Serif");
+@import url("https://use.typekit.net/dcu8csv.css");
 .col-xs-offset-12, .col-xs-offset-11, .col-xs-offset-10, .col-xs-offset-9, .col-xs-offset-8, .col-xs-offset-7, .col-xs-offset-6, .col-xs-offset-5, .col-xs-offset-4, .col-xs-offset-3, .col-xs-offset-2, .col-xs-offset-1, .col-xs-offset-0, .col-xs-12, .col-xs-11, .col-xs-10, .col-xs-9, .col-xs-8, .col-xs-7, .col-xs-6, .col-xs-5, .col-xs-4, .col-xs-3, .col-xs-2, .col-xs-1, .col-xs {
   box-sizing: border-box;
   flex: 0 0 auto;
@@ -1061,7 +1061,7 @@ html {
 body {
   font-size: 1.25rem;
   color: #212121;
-  font-family: "IBM Plex Serif", "Poppins", "Hel­vetica", Arial, sans-serif;
+  font-family: freight-text-pro, Georgia, serif;
   line-height: 1.6;
 }
 @media (max-width: 48em) {
@@ -1077,8 +1077,9 @@ body {
 
 header {
   height: 100vh;
-  background-color: #47CC8A;
-  background-image: "/images/melissa-miranda.jpg";
+  background-color: #29CC83;
+  /* background: linear-gradient(175deg, #4D99BF 0%,#47cc8a 68%,#A1B347 100%); */
+  /* background: linear-gradient(135deg, #207ad4 0%,#47cc8a 68%,#b3b32d 100%);  */
 	background-position: 0px 0px;
 	background-repeat: repeat-x;
 	animation: animatedBackground 40s linear infinite;
@@ -1091,10 +1092,15 @@ header div {
   z-index: 101;
 }
 header img {
-  max-height: 12rem;
+  max-height: 18rem;
+  margin-top: -4rem
 }
-header h1 {
-  font-family: "IBM Plex Serif", "Poppins", "Hel­vetica", Arial, sans-serif;
+header h3 {
+  font-family: freight-sans-pro, sans-serif;
+  font-size: 1.7rem;
+  margin-top: 3rem;
+  padding: 0 2rem;
+  font-weight: 500;
 }
 header .cursor {
   animation: 1s blink step-end infinite;
@@ -1122,7 +1128,7 @@ a img {
   border: 0;
 }
 a:hover {
-  color: #DA784D;
+  color: #47CC8A;
 }
 
 pre {
@@ -1184,7 +1190,7 @@ q::after {
 }
 
 blockquote::after, blockquote::before {
-  color: #DA784D;
+  color: #47CC8A;
   font-family: "IBM Plex Sans", "Roboto Slab", "Cambria", Georgia, serif;
   font-size: 35px;
   content: "“";
@@ -1275,7 +1281,7 @@ nav {
 }
 nav h3 {
   margin: 0;
-  font-family: "IBM Plex Sans", "Poppins", "Hel­vetica", Arial, sans-serif;
+  font-family: freight-sans-pro, sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
@@ -1284,7 +1290,8 @@ nav h3 {
 nav img {
   display: inline-block;
   max-width: 10em;
-  max-height: 2.5em;
+  max-height: 1.5em;
+  /* max-height: 2.5em; */
   vertical-align: middle;
 }
 nav div.logo, nav div.nav-toggle {
@@ -1316,7 +1323,7 @@ nav .nav-toggle a {
   color: #FFF;
 }
 .nav-full a:hover {
-  color: #DA784D;
+  color: #47CC8A;
 }
 
 .nav-full.active {
@@ -1343,12 +1350,14 @@ p {
   margin-bottom: 2rem;
 }
 p code {
-  font-family: "IBM Plex Mono", "Menlo", "Monaco", "Andale Mono", "lucida console", "Courier New", monospace;
+  font-family: "Menlo", "Monaco", "Andale Mono", "lucida console", "Courier New", monospace;
 }
 
 h1, h2, h3 {
-  /* font-family: "IBM Plex Sans", "Roboto Slab", "Cambria", Georgia, serif; */
+  font-family: freight-sans-pro, sans-serif;
+  font-weight: 600;
   margin-top: 2rem;
+  line-height: 1.2em;
 }
 h1 a, h2 a, h3 a {
   text-decoration: none;
@@ -1360,7 +1369,7 @@ h1 a, h2 a, h3 a {
 
 .sub-header, time {
   font-size: 1.25rem;
-  color: #4E6B6C;
+  color: #777777;
   margin-bottom: 2rem;
 }
 @media (max-width: 48em) {
@@ -1383,14 +1392,14 @@ h1 a, h2 a, h3 a {
 }
 .content a {
   text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff, 0.03em 0.075em #fff, -0.03em 0.075em #fff, 0.06em 0.075em #fff, -0.06em 0.075em #fff, 0.09em 0.075em #fff, -0.09em 0.075em #fff, 0.12em 0.075em #fff, -0.12em 0.075em #fff, 0.15em 0.075em #fff, -0.15em 0.075em #fff;
-  background-image: linear-gradient(#DA784D, #DA784D);
+  background-image: linear-gradient(#47CC8A, #47CC8A);
   background-size: 1px 2px;
   background-repeat: repeat-x;
   background-position: 0 95%;
   text-decoration: none;
 }
 .content a:hover {
-  color: #DA784D;
+  color: #47CC8A;
 }
 
 .highlight {
@@ -1431,14 +1440,14 @@ h1 a, h2 a, h3 a {
 }
 .about a {
   text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff, 0.03em 0.075em #fff, -0.03em 0.075em #fff, 0.06em 0.075em #fff, -0.06em 0.075em #fff, 0.09em 0.075em #fff, -0.09em 0.075em #fff, 0.12em 0.075em #fff, -0.12em 0.075em #fff, 0.15em 0.075em #fff, -0.15em 0.075em #fff;
-  background-image: linear-gradient(#DA784D, #DA784D);
+  background-image: linear-gradient(#47CC8A, #47CC8A);
   background-size: 2px 3px;
   background-repeat: repeat-x;
   background-position: 0 95%;
   text-decoration: none;
 }
 .about a:hover {
-  color: #DA784D;
+  color: #47CC8A;
 }
 
 .gallery div[class^=col-], .gallery div[class*=" col-"] {
@@ -1472,7 +1481,7 @@ h1 a, h2 a, h3 a {
   color: #47CC8A;
 }
 .overlay a:hover {
-  color: #DA784D;
+  color: #47CC8A;
 }
 .overlay h2 {
   color: #47CC8A;
@@ -1487,9 +1496,18 @@ h1 a, h2 a, h3 a {
 .blog {
   min-height: 100vh;
 }
+.blog h1 {
+  color: #47CC8A;
+  letter-spacing: 1px;
+  text-align: left;
+}
 .blog h3 {
   margin: 0 0 2rem;
-  font-family: "IBM Plex Serif", "Poppins", "Hel­vetica", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  color: #47CC8A;
+  text-align: left;
 }
 
 .contact {
@@ -1525,14 +1543,15 @@ input, textarea {
   padding: 10px;
   margin: 8px 0;
   width: 100%;
+  font-family: freight-sans-pro, sans-serif;
 }
 input[type=submit], textarea[type=submit] {
-  background-color: #4E6B6C;
+  background-color: #777777;
   color: #FFF;
   transition: 0.2s ease-out;
 }
 input[type=submit]:hover, textarea[type=submit]:hover {
-  background-color: #DA784D;
+  background-color: #47CC8A;
   color: #FFF;
   cursor: pointer;
 }
@@ -1544,7 +1563,7 @@ textarea {
 
 footer {
   height: 12rem;
-  background-color: #212121;
+  background-color: #47CC8A;
 }
 footer div, footer a {
   color: #FFF;
